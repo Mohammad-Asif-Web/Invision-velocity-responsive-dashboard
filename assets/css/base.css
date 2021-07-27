@@ -8,6 +8,7 @@
     --spacer: #8c54ff;
     --red: #e84b51;
     --green: #2db744;
+	--line: #e4e8f0;
 
     /* ========== Background color ======== */
     --bg-primary: #f4f6fc;
@@ -58,6 +59,7 @@ header{
 	width: 100%;
 	height: 7rem;
 	background-color: var(--bg-secondary);
+	position: relative;
 }
 header>.row{
 	display: flex;
@@ -76,8 +78,141 @@ header>.row{
 }
 .avatar>a>img{
 	width: 3rem;
-	margin-right: 3rem;
+	margin-right: 4rem;
+	object-fit: contain;
 }
+
+/* ====== MENU SECTION ======= */
+.menu{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 8rem;
+	height: 180vh;
+	background-color: var(--bg-secondary);
+	border-right: 1px solid #e4e8f0;
+}
+.menu>img{
+	margin: 3rem 0 0 3rem;
+}
+.menu>.menu-items{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 18rem;
+}
+.menu-items>a{
+	width: 8rem;
+	height: 8rem;
+	text-align: center;
+}
+.menu-items>a>img{
+	margin: 2.5rem;
+}
+.menu-items>a:hover{
+	background-color: var(--bg-primary);
+	border-left: .3rem solid #2e5bff;
+}
+ /* ====NOTIFICATIONS SECTION===== */
+.notifi{
+	position: absolute;
+	top: 7rem;
+	right: 0;
+	width: 28rem;
+	height: 172vh;
+	background-color: var(--bg-secondary);
+	z-index: 10000;
+	border-top: .1px solid #e4e8f0;
+	border-left: .1px solid #e4e8f0;
+}
+.notifi>.notifi-item1{
+	display: flex;
+	justify-content: space-around;
+}
+.notifi-item1>.left>.inner{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4rem;
+}
+.inner>p{
+	font-size: 3rem;
+	font-weight: var(--light-300);
+}
+.inner>img{
+	object-fit: contain;
+	margin: 1rem 0 0 1rem;
+	width: 3rem;
+}
+.left>span{
+	display: block;
+	font-size: 2rem;
+	margin-top: 1rem;
+	color: var(--secondary);
+	text-transform: capitalize;
+}
+.notifi-item1>.right{
+	margin-top: 6.5rem;
+}
+.right>a{
+	font-size: 1.5rem;
+	width: 3rem;
+	height: 2rem;
+	background-color: var(--bg-primary);
+	padding: 2rem 3rem;
+	text-transform: capitalize;
+}
+.right>a:hover{
+	background-color: var(--bg-secondary);
+	border: 1px solid #e4e8f0;
+}
+
+.notifi-item2>.inner-items{
+	border-top: 1px solid #e4e8f0;
+	margin-top: 3rem;
+}
+.inner-items>h5{
+	font-size: 2rem;
+	color: var(--secondary);
+	margin: 2rem 0 0 7rem;
+}
+.inner-items>.mid-item{
+	display: flex;
+	margin: 1rem 0 0 2rem;
+}
+.mid-item>img{
+	object-fit: contain;
+}
+.mid-item>p{
+	margin: 1rem 0 0 1.5rem;
+	font-size: 2rem;
+}
+.inner-items>span{
+	display: block;
+	font-size: 1.5rem;
+	color: var(--secondary);
+	margin: 1rem 0 0 7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* =======CONTENT SECTION START============== */
 .container{
@@ -191,7 +326,7 @@ header>.row{
 }
 .flow-chart>img{
 	width: 100%;
-	height: 100%;
+	height: 90%;
 	object-fit: contain;
 }
 /* ======= cars ======== */
@@ -314,10 +449,119 @@ header>.row{
 	object-fit: contain;
 }
 
+/* ======SINGLE ITEMS ======= */
+.card-item>.down-item{
+	margin-top: 2rem;
+}
+.down-item>.items{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+.items>.left{
+	display: flex;
+}
+.left>img{
+	object-fit: contain;
+}
+.same{
+	margin: 1rem 0 0 .5rem;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+}
+.same2{
+	color: var(--secondary);
+}
 
+/* ======= TRIPS ======= */
+.main-card>.trips{
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
+.trips>.trips-top{
+	display: flex;
+	justify-content: space-between;
+}
+.trips-top>p{
+	font-size: 2rem;
+	color: var(--secondary);
+	text-transform: uppercase;
+}
+.trips-top>img{
+	object-fit: contain;
+}
+.trips>.trips-chart{
+	width: 100%;
+	height: 100%;
+}
+.trips-chart>img{
+	width: 100%;
+	height: 70%;
+	object-fit: contain;
+	margin-top: 2rem;
+}
+.trips>.trips-down{
+	display: flex;
+	margin-left: 2rem;
+}
+.trips-down>.trips1{
+	flex-basis: 50%;
+}
+.same-heading{
+	display: block;
+	font-size: 3rem;
+	font-weight: var(--light-300);
+	margin-left: 1rem;
+}
+.same-span{
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	background-color: var(--border);
+	margin-bottom: 1rem;
+}
+.same-span>span{
+	font-size: 1.5rem;
+	margin-left: 2rem;
+	color: var(--secondary);
+}
+.trips2>.same-span{
+	background-color: var(--spacer);
+}
 
-
+/* ======== SERVIE ======= */
+.service{
+	padding: 2rem;
+}
+.service>p{
+	font-size: 2rem;
+	color: var(--secondary);
+	text-transform: uppercase;
+}
+.service>.service-info{
+	margin-top: 3rem;
+}
+.service-info>.service-item>.item{
+	width: 2rem;
+	height: 2rem;
+	border: .1rem solid #8798ad;
+	border-radius: 50%;
+}
+.service-item{
+	display: flex;
+	margin-bottom: 2.7rem;
+}
+.service-item>p{
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	margin: .3rem 0 0 1rem;
+}
+.service-item>p>span{
+	font-weight: var(--semi-bold-600);
+}
 
 
 
