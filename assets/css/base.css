@@ -65,6 +65,13 @@ header>.row{
 	display: flex;
 	justify-content: space-between;
 }
+/* ==== STICKY ==== */
+/* .sticky{
+	background: var(--bg-secondary)
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+} */
+
 .row>.icon{
 	display: inline-block;
 	margin-left: 19rem;
@@ -73,6 +80,21 @@ header>.row{
 .icon>h1{
 	display: inline-block;
 }
+
+.row>.overview{
+	justify-content: center;
+	margin-top: 2.4rem;
+	font-size: .1rem;
+	color: var(--primary);
+	font-weight: var(--semi-bold-600);
+	visibility: hidden;
+}
+.overview>i{
+	color: var(--secondary);
+	margin-left: 1rem;
+}
+
+
 .row>.avatar{
 	margin: 2rem 8rem 0 0;
 }
@@ -122,9 +144,10 @@ header>.row{
 	width: 28rem;
 	height: 172vh;
 	background-color: var(--bg-secondary);
-	z-index: 10000;
+	z-index: 1000000;
 	border-top: .1px solid #e4e8f0;
 	border-left: .1px solid #e4e8f0;
+	opacity: 1;
 }
 .notifi>.notifi-item1{
 	display: flex;
@@ -171,10 +194,18 @@ header>.row{
 	border-top: 1px solid #e4e8f0;
 	margin-top: 3rem;
 }
+.notifi-item2>.inner-items:nth-child(7){
+	border-bottom: 1px solid #e4e8f0;
+	
+}
+.inner-items>.last{
+	margin-bottom: 3rem;
+}
 .inner-items>h5{
 	font-size: 2rem;
 	color: var(--secondary);
 	margin: 2rem 0 0 7rem;
+	text-transform: capitalize;
 }
 .inner-items>.mid-item{
 	display: flex;
@@ -186,6 +217,7 @@ header>.row{
 .mid-item>p{
 	margin: 1rem 0 0 1.5rem;
 	font-size: 2rem;
+	color: var(--primary);
 }
 .inner-items>span{
 	display: block;
@@ -193,26 +225,6 @@ header>.row{
 	color: var(--secondary);
 	margin: 1rem 0 0 7rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* =======CONTENT SECTION START============== */
 .container{
@@ -532,9 +544,10 @@ header>.row{
 	background-color: var(--spacer);
 }
 
-/* ======== SERVIE ======= */
+/* ======== SERVICE ======= */
 .service{
 	padding: 2rem;
+	z-index: -1000;
 }
 .service>p{
 	font-size: 2rem;
@@ -562,48 +575,3 @@ header>.row{
 .service-item>p>span{
 	font-weight: var(--semi-bold-600);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/

@@ -1,0 +1,372 @@
+@media screen and (max-width: 1310px){
+    .spacer2>h1{
+        font-size: 3rem;
+		margin-top: 1.5rem;
+    }
+	.spacer2>p {
+		font-size: 1.5rem;
+	}
+	.cars>h4 {
+		font-size: 1.5rem;
+	}
+	.mi>h4 {
+		font-size: 1.5rem;
+	}
+	.trips-chart>img {
+		height: 100%;
+	}
+	.same-heading {
+		font-size: 2rem;
+	}
+	.same-span {
+		width: 1rem;
+		height: 1rem;
+		margin-top: .8rem;
+	}
+	.same-span>span {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.mid>h1 {
+		font-size: 2.5rem;
+	}
+	.mid>p {
+		font-size: 1.5rem;
+	}
+	.cars>h1 {
+		font-size: 2rem;
+	}
+	.same2 {
+		font-size: 1.2rem;
+	}
+}
+@media screen and (max-width: 960px) {
+
+	.mi>h1 {
+		font-size: 2rem;
+	}
+	.same {
+		margin: 1.2rem 0 0 .5rem;
+		font-size: 1rem;
+	}
+	.same2 {
+		font-size: .9rem;
+	}
+	.left>img {
+		width: 4rem;
+	}
+}
+
+/* ========== TAB DEVICES ========= */
+@media screen and (max-width: 860px) {
+    .row>.avatar{
+        margin-right: 0;
+    }
+    .avatar>a>img{
+        margin-right: 3rem;
+    }
+    .row>.icon{
+        margin-left: 40%;
+    }
+    .menu {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 8rem;
+        height: 7rem;
+        background-color: var(--bg-secondary);
+        border-right: none;
+    }
+    .menu > .menu-items {
+        display: none;
+    }
+    .notifi{
+        display: none;
+        overflow: hidden;
+    }
+
+    .container {
+        width: 90%;
+        margin: 6.7rem 0 0 5%;
+        grid-template-rows: auto 40rem 40rem;
+    }
+
+    .progress>.welcome{
+        grid-template-rows: auto auto 40rem;
+    }
+    .welcome>.score{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .chart{
+        grid-column: 1/-1;
+        grid-row: 3/5;
+        height: 100%;
+    }
+    .cars{
+        grid-column: 3/-1;
+        grid-row: 1/2;
+    }
+    .mi{
+        grid-column: 3/-1;
+        grid-row: 2/3;
+    }
+    .welcome>.score {
+        display: block;
+    }
+    .score>.spacer1 {
+        margin-top: 4rem;
+        margin-left: 10%;
+        height: 60%;
+        width: 80%;
+        display: block;
+    }
+    .spacer1>img {
+        width: 100%;
+        height: 100%;
+    }
+    .score>.spacer2{
+        height: 40%;
+        text-align: center;
+    }
+    .spacer2>h1 {
+        display: none;
+        overflow: hidden;
+    }
+    .spacer1>.mid {
+        top: 65%;
+    }
+    .mid>h1 {
+        font-size: 5rem;
+    }
+    .mid>p {
+        font-size: 2rem;
+    }
+    .cars>h4,
+    .mi>h4 {
+        font-size: 2rem;
+        margin-top: 5%;
+        margin-left: 8%;
+    }
+    .cars>h1,
+    .mi>h1 {
+        font-size: 4rem;
+        margin-left: 10%;
+    }
+    .cars>i,
+    .mi>i {
+        display: none;
+    }
+    .cars>span,
+    .mi>span{
+        display: none;
+    }
+    .map>.split {
+        display: none;
+    }
+
+    
+    .card>.main-card {
+    grid-template-rows: 45rem 47rem;
+    }
+    .main-card>.card-item {
+    grid-column: 1/4;
+    }
+    .main-card>.trips {
+    grid-column: 4/-1;
+    }
+    .main-card>.service {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    }
+    .same {
+        font-size: 1.4rem;
+    }
+    .same2 {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .icon>h1 {
+        font-size: 1.8rem;
+    }
+    .avatar>a>img {
+        margin-right: 1.7rem;
+    }
+    .avatar>a>img {
+        width: 2.3rem;
+    }
+    .cars>h4, .mi>h4 {
+        font-size: 1.5rem;
+        margin-top: 10%;
+        margin-left: 8%;
+    }
+    .cars>h1, .mi>h1 {
+        font-size: 3rem;
+    }
+    .same {
+        font-size: 1.2rem;
+    }
+    .same2 {
+        font-size: 1rem;
+    }
+    .trips-chart>img {
+        height: 90%;
+    }
+    .trips-down>.trips1 {
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .avatar>a>img {
+        width: 2rem;
+        margin-right: 1.5rem;
+    }
+    .cars>h4, .mi>h4 {
+        font-size: 1.4rem;
+    }
+    .mid>h1 {
+        font-size: 3rem;
+    }
+    .spacer2>p {
+        font-size: 1.4rem;
+    }
+    .score>.spacer2 {
+        margin-top: 0;
+    }
+    .left>img {
+        width: 3rem;
+    }
+    .same {
+        font-size: 1rem;
+    }
+    .same2 {
+        font-size: 0.8rem;
+    }
+    .trips-chart>img {
+        height: 100%;
+        object-fit: contain;
+        margin-top: 0;
+    }
+    .trips-down>.trips1 {
+        margin-bottom: 4rem;
+    }
+    .container>.map>p {
+        font-size: 1.4rem;
+    }
+    .top-item>p {
+        font-size: 1.4rem;
+    }
+    .trips-top>p {
+        font-size: 1.4rem;
+    }
+    .chart>.flow-chart>p {
+        font-size: 1.4rem;
+        margin-left: 0;
+    }
+    .service>p {
+        font-size: 1.4rem;
+    }
+    .same-span>span {
+        font-size: 1rem;
+        margin-left: 1.4rem;
+    }
+}
+   
+/* ====== MOBILE DEVICES ======= */
+@media screen and (max-width: 430px) {
+    .row>.overview{
+        visibility: visible;
+        margin-right: 21%;
+        font-size: 2rem;
+    }
+    header>.row {
+        justify-content: flex-end;
+    }
+    .row>.icon {
+        display: none;
+    }
+    .row>.avatar>a:nth-child(n+2){
+        display: none;
+    }
+    .welcome>.score{
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        display: flex;
+    }
+    .cars{
+        grid-column: 1/3 ;
+        grid-row: 2/3;
+    }
+    .cars>h4, .mi>h4 {
+        font-size: .8rem;
+    }
+    .mi{
+        grid-column: 3/-1;
+        grid-row: 2/3;
+    }
+    .cars>h1, .mi>h1 {
+        font-size: 2rem;
+        margin-left: 5%;
+    }
+    .score>.spacer1{
+        height: 18rem;
+        margin: 0 0 10% 0;
+        text-align: center;
+        padding: 1rem;
+    }
+    .score>.spacer2{
+        margin-top: 20%;
+        text-align: start;
+    }
+    .map {
+        display: none;
+        overflow: hidden;
+    }
+
+    .card>.main-card {
+        grid-template-rows: 45rem auto;
+    }
+    .main-card>.trips {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+    }
+    .left>img {
+        width: 4rem;
+    }
+    .same {
+        font-size: 1.2rem;
+    }
+    .same2 {
+        font-size: 1rem;
+    }
+    .main-card>.service {
+        display: none;
+    }
+    .trips-chart>img {
+        margin-top: 20%;
+    }
+    .trips>.trips-down {
+        margin-top: 15%;
+    }
+    .container {
+        margin: 3rem 0 0 5%;
+        grid-gap: 0;
+        grid-template-rows: auto auto;
+    }
+    .main-card>.card-item {
+        margin-top: 2rem;
+        grid-column: 1/-1;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    
+}
+

@@ -1,0 +1,58 @@
+.menu{
+    animation-name: menu;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes menu{
+    0%{
+        left: -100px;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.notifi{
+    animation-name: notifi;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+}
+
+@keyframes notifi{
+    0%{
+        right: -400px;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+.container{
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    opacity: 0;
+}
+@keyframes content {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
