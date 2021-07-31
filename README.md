@@ -21,3 +21,6 @@ We know Velocity isn’t a real company, but it could be. This kit includes 10 c
 - Sign Up
 
 # Live Demo
+
+[Click here](https://sad-hamilton-55e241.netlify.app/) to see this Dashboard.
+
