@@ -13,20 +13,12 @@
     }
 }
 
-.notifi{
-    animation-name: notifi;
-    animation-duration: 2.5s;
-    animation-timing-function: linear;
+/*======notifi hide show toogle class====== */
+.toogle{
+	margin-right: -300px;
+	transition: 0.5s linear;
 }
 
-@keyframes notifi{
-    0%{
-        right: -400px;
-    }
-    100%{
-        right: 0;
-    }
-}
 
 .container{
     animation-name: content;
