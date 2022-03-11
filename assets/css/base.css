@@ -51,6 +51,11 @@ body{
 	background-color: var(--bg-primary);
 }
 
+.menu-items a.active{
+	border-left: .5rem solid #2e5bff;
+}
+
+
 /* ====== STARTING MAIN LAYOUT DESIGN ======== */
 
 /* ======= STARTING HEADER SECTION===========*/
@@ -136,6 +141,7 @@ header>.row{
 	background-color: var(--bg-primary);
 	border-left: .3rem solid #2e5bff;
 }
+
  /* ====NOTIFICATIONS SECTION===== */
 .notifi{
 	position: absolute;
@@ -577,3 +583,65 @@ header>.row{
 .service-item>p>span{
 	font-weight: var(--semi-bold-600);
 }
+
+/* ========ANALYTIC SECTION======= */
+.analytic{
+	width: 85%;
+	margin: 7.5rem 0 0 19.5rem;
+}
+.analytic-top{
+	width: 102.5%;
+	height: 60rem;
+}
+.analytic-top h1{
+	font-size: 4rem;
+	font-weight: 200;
+	margin-bottom: 2rem;
+}
+.analytic-top .analytic-img{
+	width: 100%;
+	height: 100%;
+	background: url("../../img/analytic/chart-large.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+	margin-left: -2rem;
+}
+.analytic .analytic-card{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10rem;
+}
+.analytic-card .cards{
+	width: 350px;
+	height: 200px;
+	background-color: var(--bg-secondary);
+	padding: 2rem 0 2rem 2rem;
+	border-radius: 5px;
+}
+.analytic-card .cards img{
+	width: 50px;
+	margin-bottom: 1rem;
+}
+.analytic-card .cards h1{
+	font-size: 6rem;
+	font-weight: 200;
+}
+.analytic-card .cards small{
+	font-size: 2rem;
+	font-weight: 100;
+	color: var(--secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
